@@ -154,6 +154,7 @@ const createIntern = () => {
 function createRender() {
   fs.writeFile(outputPath, render(team), (err) => {
     if (err) {
+      console.log("There was an error.");
       return;
     }
     console.log("Take a look at your new team!");
